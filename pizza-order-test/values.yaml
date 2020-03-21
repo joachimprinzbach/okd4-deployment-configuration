@@ -1,4 +1,4 @@
-generic:
+pizza-order-test:
   image:
     repository: joachimprinzbach/pizza-order
     tag: 1

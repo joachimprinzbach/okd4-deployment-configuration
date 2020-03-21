@@ -2,4 +2,4 @@ dependencies:
   - name: generic-chart
     version: 1.0.0
     repository: https://registry.baloise.dev/chartrepo/library
-    alias: generic
+    alias: pizza-inventory-test
