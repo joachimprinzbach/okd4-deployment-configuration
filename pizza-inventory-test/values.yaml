@@ -1,7 +1,7 @@
 pizza-inventory-service:
   image:
     repository: joachimprinzbach/pizza-inventory
-    tag: 5
+    tag: 6
   ingress:
     enabled: true
     host: joachim-pizza-inventory-test.apps.origin.baloise.dev
