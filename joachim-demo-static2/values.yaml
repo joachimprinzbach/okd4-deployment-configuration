@@ -4,4 +4,4 @@ generic:
     tag: 0.3.0
   ingress:
     enabled: true
-    host: joachim-demo-static2.apps.origin.baloise.dev
+    host: joachim-demo-static3.apps.origin.baloise.dev
