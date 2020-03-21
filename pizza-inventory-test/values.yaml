@@ -1,4 +1,4 @@
-pizza-inventory-test:
+pizza-inventory-service:
   image:
     repository: joachimprinzbach/pizza-inventory
     tag: 1

@@ -1,4 +1,4 @@
-pizza-order-test:
+pizza-order-service:
   image:
     repository: joachimprinzbach/pizza-order
     tag: 1
