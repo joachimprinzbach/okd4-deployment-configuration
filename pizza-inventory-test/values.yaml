@@ -1,0 +1,7 @@
+generic:
+  image:
+    repository: joachimprinzbach/pizza-inventory
+    tag: 1
+  ingress:
+    enabled: true
+    host: joachim-pizza-inventory-test.apps.origin.baloise.dev
