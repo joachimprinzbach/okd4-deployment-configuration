@@ -5,3 +5,5 @@ pizza-inventory-service:
   ingress:
     enabled: true
     host: joachim-pizza-inventory-test.apps.origin.baloise.dev
+  service:
+    port: 80
