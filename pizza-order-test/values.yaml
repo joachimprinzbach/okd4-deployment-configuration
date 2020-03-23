@@ -1,7 +1,7 @@
 pizza-order-service:
   image:
     repository: joachimprinzbach/pizza-order
-    tag: 8
+    tag: 9
   ingress:
     enabled: true
     host: joachim-pizza-order-test.apps.origin.baloise.dev
