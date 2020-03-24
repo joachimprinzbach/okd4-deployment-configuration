@@ -7,4 +7,4 @@ pizza-order-service:
     host: joachim-pizza-order-prod.apps.origin.baloise.dev
   env:
     - name: env
-      value: "prod1"
+      value: "prod"
