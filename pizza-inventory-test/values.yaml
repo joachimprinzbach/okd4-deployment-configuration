@@ -1,7 +1,10 @@
 pizza-inventory-service:
   image:
     repository: joachimprinzbach/pizza-inventory
-    tag: 10
+    tag: 11
   ingress:
     enabled: true
     host: joachim-pizza-inventory-test.apps.origin.baloise.dev
+  env:
+    - name: ENVIRONMENT
+      value: "test"
