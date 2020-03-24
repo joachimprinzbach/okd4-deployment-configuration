@@ -6,5 +6,5 @@ pizza-order-service:
     enabled: true
     host: joachim-pizza-order-prod.apps.origin.baloise.dev
   env:
-    - name: ENVIRONMENT
+    - name: env
       value: "prod1"

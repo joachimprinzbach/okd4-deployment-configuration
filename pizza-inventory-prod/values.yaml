@@ -6,5 +6,5 @@ pizza-inventory-service:
     enabled: true
     host: joachim-pizza-inventory-prod.apps.origin.baloise.dev
   env:
-    - name: ENVIRONMENT
+    - name: env
       value: "prod"
