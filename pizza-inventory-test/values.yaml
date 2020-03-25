@@ -11,14 +11,3 @@ pizza-inventory-service:
   env:
     - name: env
       value: "test"
-service-mesh:
-  gatewayName: pizza-inventory-gateway
-  services:
-    - name: pizza-inventory-istio-service
-      gateway: true
-      port: 80
-      versions:
-        - name: v1
-          match:
-            - uri:
-                prefix: /
