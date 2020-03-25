@@ -7,6 +7,7 @@ pizza-order-service:
     host: joachim-pizza-order-test.apps.origin.baloise.dev
   annotations:
     sidecar.istio.io/inject: "true"
+    status.sidecar.istio.io/port: "0"
   env:
     - name: env
       value: "test"
