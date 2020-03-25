@@ -10,7 +10,7 @@ spec:
   http:
     - match:
         - uri:
-            prefix: /api/pizza/items
+            prefix: /
       route:
         - destination:
             host: pizza-inventory-service
