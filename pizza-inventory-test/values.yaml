@@ -14,7 +14,7 @@ pizza-inventory-service:
 service-mesh:
   gatewayName: pizza-inventory-gateway
   services:
-    - name: pizza-inventory-service
+    - name: pizza-inventory-istio-service
       gateway: true
       port: 80
       versions:
