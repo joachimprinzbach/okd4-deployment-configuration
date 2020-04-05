@@ -4,7 +4,7 @@ pizza-order-service:
     tag: 14
   ingress:
     enabled: true
-    host: joachim-pizza-order-prod.apps.origin.baloise.dev
+    host: joachim-pizza-order-prod.apps.okd.baloise.dev
   env:
     - name: env
       value: "prod"

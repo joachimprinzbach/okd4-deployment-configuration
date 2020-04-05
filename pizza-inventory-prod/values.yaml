@@ -4,7 +4,7 @@ pizza-inventory-service:
     tag: 14
   ingress:
     enabled: true
-    host: joachim-pizza-inventory-prod.apps.origin.baloise.dev
+    host: joachim-pizza-inventory-prod.apps.okd.baloise.dev
   env:
     - name: env
       value: "prod"

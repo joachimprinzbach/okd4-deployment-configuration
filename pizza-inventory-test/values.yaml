@@ -4,7 +4,7 @@ pizza-inventory-service:
     tag: 14
   ingress:
     enabled: true
-    host: joachim-pizza-inventory-test.apps.origin.baloise.dev
+    host: joachim-pizza-inventory-test.apps.okd.baloise.dev
   annotations:
     sidecar.istio.io/inject: "true"
     status.sidecar.istio.io/port: "0"
