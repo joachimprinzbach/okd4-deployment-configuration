@@ -1,7 +1,7 @@
 dialogflow-api:
   image:
     repository: joachimprinzbach/dialogflow-api
-    tag: v0.1.0
+    tag: v0.2.0
   ingress:
     enabled: true
     host: dialogflow-api.apps.okd.baloise.dev
