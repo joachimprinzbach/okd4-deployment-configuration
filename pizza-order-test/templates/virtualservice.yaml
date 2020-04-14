@@ -10,11 +10,11 @@ spec:
   http:
     - match:
         - uri:
-            prefix: /pizza-inventory-test
+            prefix: /pizza-order-test
       rewrite:
         uri: "/"
       route:
         - destination:
-            host: pizza-inventory-service
+            host: pizza-order-service
             port:
               number: 80
