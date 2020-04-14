@@ -8,6 +8,8 @@ pizza-inventory-service:
   annotations:
     sidecar.istio.io/inject: "true"
     status.sidecar.istio.io/port: "0"
+  labels:
+    maistra.io/expose-route: 'true'
   env:
     - name: env
       value: "test"
