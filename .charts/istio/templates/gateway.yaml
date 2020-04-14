@@ -1,41 +1,14 @@
-kind: Route
-apiVersion: route.openshift.io/v1
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
 metadata:
-  name: pizza-order-service
-  namespace: pizza-order-prod
-  selfLink: >-
-    /apis/route.openshift.io/v1/namespaces/pizza-order-prod/routes/pizza-order-service
-  uid: a304157f-06d8-413e-908d-1325fa431d02
-  resourceVersion: '9592502'
-  creationTimestamp: '2020-03-24T13:50:22Z'
-  labels:
-    app: pizza-order-service
-    app.kubernetes.io/instance: pizza-order-prod
-    helm.sh/chart: pizza-order-service-0.2.0
-    release: pizza-order-prod
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: >
-      {"apiVersion":"route.openshift.io/v1","kind":"Route","metadata":{"annotations":{},"labels":{"app":"pizza-order-service","app.kubernetes.io/instance":"pizza-order-prod","helm.sh/chart":"pizza-order-service-0.2.0","release":"pizza-order-prod"},"name":"pizza-order-service","namespace":"pizza-order-prod"},"spec":{"host":"joachim-pizza-order-prod.apps.okd.baloise.dev","path":"/","port":{"targetPort":"http"},"tls":{"insecureEdgeTerminationPolicy":"Redirect","termination":"edge"},"to":{"kind":"Service","name":"pizza-order-service","weight":100},"wildcardPolicy":"None"}}
+  name: pizza-gateway
 spec:
-  host: joachim-pizza-order-prod.apps.okd.baloise.dev
-  path: /
-  to:
-    kind: Service
-    name: pizza-order-service
-    weight: 100
-  port:
-    targetPort: http
-  tls:
-    termination: edge
-    insecureEdgeTerminationPolicy: Redirect
-  wildcardPolicy: None
-status:
-  ingress:
-    - host: joachim-pizza-order-prod.apps.okd.baloise.dev
-      routerName: default
-      conditions:
-        - type: Admitted
-          status: 'True'
-          lastTransitionTime: '2020-03-24T13:50:22Z'
-      wildcardPolicy: None
-      routerCanonicalHostname: apps.okd.baloise.dev
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+    - port:
+        number: 80
+        name: http
+        protocol: HTTP
+      hosts:
+        - "*"
