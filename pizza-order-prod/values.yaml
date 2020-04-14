@@ -5,10 +5,6 @@ pizza-order-service:
   ingress:
     enabled: true
     host: joachim-pizza-order-prod.apps.okd.baloise.dev
-  ports:
-    http:
-      servicePort: 8080
-      containerPort: 8080
   annotations:
     sidecar.istio.io/inject: "true"
     status.sidecar.istio.io/port: "0"
