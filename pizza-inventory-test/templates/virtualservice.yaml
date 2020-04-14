@@ -11,6 +11,8 @@ spec:
     - match:
         - uri:
             prefix: /pizza-inventory
+      rewrite:
+        uri: "/"
       route:
         - destination:
             host: pizza-inventory-service
