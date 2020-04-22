@@ -1,9 +1,0 @@
-dependencies:
-  - name: generic-chart
-    version: 0.4.0
-    repository: https://registry.baloise.dev/chartrepo/library
-    alias: pizza-inventory-service
-#  - name: istio
-#    repository: file://../.charts/istio
-#    version: 0.1.0
-#    alias: service-mesh
