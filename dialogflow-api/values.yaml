@@ -2,9 +2,11 @@ dialogflow-api:
   image:
     repository: joachimprinzbach/dialogflow-api
     tag: v0.2.0
-  ingress:
-    enabled: true
-    host: dialogflow-api.apps.okd.baloise.dev
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: dialogflow-api.apps.okd.baloise.dev
   env:
     - name: GIT_TOKEN
       valueFrom:
